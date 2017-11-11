@@ -1,14 +1,7 @@
-# Backtracking
-
 ## Problem:
 
+In energy production, the power grid is a a large directed graph of energy consumers and producers. At times you need to cut at certain nodes and trim demand because you cannot supply enough of a load.
 
-I am a teacher and every year we have overnight excursions where we have to organize rooms for around 100 students.
-However there are a number of requirements when organise these rooms:
+In DailyProgrammeropolis, all buildings are connected to the grid and all consume power to varying degrees. Some generate power because they have installed on-site generation and sell the excess to the grid, some do not.
 
-- Boys and girls MUST be in seperate rooms
-- Room sizes and amount of rooms will vary. e.g. 
-- This year we might have 4x '5 bed' rooms and 7x '4 bed' rooms, however, 
-- we may have restrictions on this so all the boys rooms are together etc..
-- Each student allocates 3 students they would like to share with,
-- and we promise to get them at least 1 of their friends.
+The scenario you're facing is this: due to a fault with the bulk power generation facility not local to DailyProgrammerololis, you must trim the power grid. You have connectivity data, and power consumption and production data. Your goal with this challenge is to maximize the number of powered nodes with the generated energy you have. Note that when you cut off a node, you run the risk the downstream ones will loose power, too, if they are no longer connected. This is how you'll shed demand, by selectively cutting the graph. You can make as many cuts as you want (there is no restriction on this).
